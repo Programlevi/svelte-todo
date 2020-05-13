@@ -54,7 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 3rem;
+    height: 4rem;
     border: 1px solid black;
   }
   label {

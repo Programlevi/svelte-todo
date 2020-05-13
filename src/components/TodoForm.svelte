@@ -22,7 +22,7 @@
 <style>
   input {
     width: 40rem;
-    height: 5rem;
+    height: 5.7rem;
     padding: 1.5rem;
     border: none;
     font-size: 2rem;

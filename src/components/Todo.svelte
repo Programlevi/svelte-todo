@@ -55,41 +55,44 @@
   li {
     display: flex;
     align-items: center;
-    width: 40rem;
+    max-width: 40rem;
     font-size: 2rem;
     border-top: 1px solid black;
     border-left: 1px solid black;
     border-right: 1px solid black;
   }
+
   li:first-child {
     border-top: none;
   }
+
   label {
     width: 2rem;
     height: 2rem;
     margin: 0 1.5rem;
-  }
-  input[type='checkbox'] {
-    display: none;
-  }
-  /* Working on checkbox */
-  input[type='checkbox']:checked + span::after {
-    content: '';
-    display: block;
-    background-color: gray;
-    width: 75%;
-    height: 80%;
-    border: 1.5px solid gray;
     border-radius: 50%;
-  }
-  span {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
     border: 1.5px solid gray;
+  }
+
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  span {
+    display: block;
+    background-color: transparent;
+    margin-top: 1px;
+    width: 80%;
+    height: 80%;
     border-radius: 50%;
+    transition: all 0.1s;
+  }
+
+  input[type='checkbox']:checked + span {
+    background-color: gray;
   }
 
   input[type='text'],
@@ -97,7 +100,7 @@
     flex: 1;
     font-weight: 500;
     min-height: 5rem;
-    padding: 10px 0;
+    padding: 1.5rem 0;
     word-break: break-all;
   }
 
